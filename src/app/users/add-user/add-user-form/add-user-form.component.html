@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+<form>
+  <div class="form-group mt-2">
+    <label for="exampleInputFullName">First Name</label>
+    <input type="text" class="form-control" #txtFirstName id="txtFirstName" aria-describedby="emailHelp" placeholder="First name">
+  </div>
+  <div class="form-group mt-2">
+    <label for="exampleInputFullName">Last Name</label>
+    <input type="text" class="form-control" #txtLastName id="txtLastName" aria-describedby="emailHelp" placeholder="Last name">
+  </div>
+  <div class="form-group mt-2">
+    <label for="exampleInputEmail1">Date of birth</label>
+    <input type="date" class="form-control" id="txtBirthDate" #txtBirthDate txtDob aria-describedby="emailHelp" placeholder="Date of birth">
+  </div>
+  <div class="form-group mt-2">
+    <label for="exampleInputPassword1">Is User Active</label>
+    <input type="checkbox" style="margin-left: 15px;" #chkActive id="chkActive"> Active
+  </div>
+  <button type="button" (click)="onUserAddFormSubmit()" class="btn btn-primary mt-2">Add User</button>
+</form>
+</div>
+</div>
+</div>
