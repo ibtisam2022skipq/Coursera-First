@@ -1,0 +1,9 @@
+<div *ngIf="items && items.length > 0">
+    <ul class="list-group mt-5">
+      <app-list-product-form *ngFor="let item of items" [item]="item" (itemDelete)="deleteItem($event)"></app-list-product-form>
+    </ul>
+  </div>
+  <div *ngIf="!items || items.length <= 0">
+    <h1>No Product(s) Found!</h1>
+  </div>
+  
